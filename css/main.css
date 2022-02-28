@@ -1,0 +1,158 @@
+/* Fonts  */
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/livvic-v11-latin-regular.woff2') format('woff2'),
+       url('../fonts/livvic-v11-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/livvic-v11-latin-700.woff2') format('woff2'),
+       url('../fonts/livvic-v11-latin-700.woff') format('woff');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Livvic', sans-serif;
+  font-weight: normal;
+}
+
+/* MAIN  */
+
+.meet-directors-wrapper {
+  background-color: #004047;
+  background-image:url(../img/bacround-img-top.png),url(../img/bacround-img-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 100px 200px , 147px 100px;
+  background-position: left top ,right bottom;
+}
+
+.container {
+  width: 1340px;
+  padding-right: 65px;
+  padding-left: 65px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.meet-directors-heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  padding-top: 140px;
+  margin-bottom: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+.meet-directors-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 168px;
+}
+.meet-directors-item {
+  position: relative;
+  text-align: center;
+  width: 350px;
+  height: 253px;
+  margin-bottom: 76px;
+}
+.directors-item-content {
+  display: flex;
+}
+.about-directors {
+  position:absolute;
+  z-index: 1;
+  width: 350px;
+  height: 253px;
+  background-color: #012f34;
+  text-align: center;
+}
+.about-directors-img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.directors-names {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+}
+.profession-directors {
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+
+}
+.directors-item-btn {
+  display: inline-block;
+  position: absolute;
+  bottom: -29px;
+  right: 147px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  background-color: #f67e7e;
+  color: #012F34;
+  z-index: 4;
+}
+.meet-directors-item:hover .directors-item-btn {
+  background-color: #79c8c7;
+  transform: rotate(45deg);
+}
+.opinion-directors {
+  position: relative;
+  z-index: 0;
+  background-color: #002529;
+  width: 350px;
+  height: 253px;
+  padding-top: 35px ;
+  text-align: center;
+}
+.motto-directors {
+  width: 254px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.directors-link-img {
+  text-decoration: none;
+  margin-left: 16px;
+}
+.meet-directors-item:hover .opinion-directors {
+  z-index: 1;
+}
+.item-btn {
+  background-color: #79c8c7;
+  transform: rotate(45deg);
+}
+
